@@ -6,11 +6,34 @@
   <title>Document</title>
   <link href="./src/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-4xl font-bold text-center text-blue-600 underline p-4">
-    Tailwind Template
-  </h1>
-  <small>(If above header has styling tailwind is working...)</small>
-  
+<!-- floralwhite lavender, darkblue, blueviolet, mediumpurple, shadow-sky-300-->
+<body class="p-4 bg-[floralwhite]">
+  <!-- grid grid-cols-2 grid-rows-1 -->
+  <div class="flex justify-between">
+    <div class="p-2 self-center">
+      <p class="text-4xl text-sky-950 text-shadow-2xs text-shadow-sky-300">Portfolio</p>
+      <p>Peter Cypers</p>
+    </div>
+
+    <!-- <div class="w-full h-full bg-[url(./img/PeterCypers_cropped.JPG)]"></div>  -->
+    <div class="w-32 h-32 sm:justify-self-end">
+      <img src="src/img/PeterCypers_cropped.JPG" class="w-full h-full object-fill rounded-[64px] shadow-2xl ml-auto" />
+    </div>
+  </div>
+
+  <!-- <div class="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"></div> -->
+  <div class="bg-[mediumpurple] border-2 border-[floralwhite] mb-4 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
+    <button class="text-[darkblue] text-xl text-shadow-2xs text-shadow-sky-300">Cv</button>
+  </div>
+  <div class="mb-4 border-2 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
+    <button class="text-sky-950 text-shadow-2xs text-shadow-sky-300">Side Projects</button>
+  </div>
+  <div class="mb-4 border-2 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
+    <button class="text-sky-950 text-shadow-2xs text-shadow-sky-300">LinkedIn</button>
+  </div>
+  <div class="mb-4 border-2 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
+    <button class="text-sky-950 text-shadow-2xs text-shadow-sky-300">Personality Tests</button>
+  </div>
+
 </body>
 </html>
