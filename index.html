@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio Peter</title>
   <link href="./src/output.css" rel="stylesheet">
 </head>
 <!-- floralwhite lavender, darkblue, blueviolet, mediumpurple, shadow-sky-300-->
-<body class="p-4 bg-[floralwhite]">
+<body class="max-w-[650px] mx-auto p-4 bg-[floralwhite]">
   <!-- grid grid-cols-2 grid-rows-1 -->
   <div class="flex justify-between">
     <div class="p-2 self-center">
@@ -21,19 +21,21 @@
     </div>
   </div>
 
-  <!-- <div class="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"></div> -->
-  <div class="bg-[mediumpurple] border-2 border-[floralwhite] mb-4 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
-    <button class="text-[darkblue] text-xl text-shadow-2xs text-shadow-sky-300">Cv</button>
-  </div>
-  <div class="mb-4 border-2 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
-    <button class="text-sky-950 text-shadow-2xs text-shadow-sky-300">Side Projects</button>
-  </div>
-  <div class="mb-4 border-2 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
-    <button class="text-sky-950 text-shadow-2xs text-shadow-sky-300">LinkedIn</button>
-  </div>
-  <div class="mb-4 border-2 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center">
-    <button class="text-sky-950 text-shadow-2xs text-shadow-sky-300">Personality Tests</button>
+  <div class="grid grid-cols-1">
+    <button id="cv_btn" class="bg-[mediumpurple] border-2 border-[floralwhite] mb-4 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center text-[darkblue] text-xl text-shadow-2xs text-shadow-sky-300 cursor-pointer">
+      CV
+    </button>
+    <button id="projects_btn" class="bg-[mediumpurple] border-2 border-[floralwhite] mb-4 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center text-[darkblue] text-xl text-shadow-2xs text-shadow-sky-300 cursor-pointer">
+      Side Projects
+    </button>
+    <button id="linkedin_btn" class="bg-[mediumpurple] border-2 border-[floralwhite] mb-4 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center text-[darkblue] text-xl text-shadow-2xs text-shadow-sky-300 cursor-pointer">
+      LinkedIn
+    </button>
+    <button id="personalitytests_btn" class="bg-[mediumpurple] border-2 border-[floralwhite] mb-4 active:border-gray-400 shadow-2xl/15 w-48 rounded-[35px] p-4 text-center text-[darkblue] text-xl text-shadow-2xs text-shadow-sky-300 cursor-pointer">
+      Personality Tests
+    </button>
   </div>
 
+  <script src="src/js/main.js"></script>
 </body>
 </html>
