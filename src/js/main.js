@@ -9,7 +9,7 @@ function init() {
   const personalityTestsBtn = document.getElementById("personalitytests_btn");
   const CV_PATH = "./src/docs/Peter_Cypers_CV(final).pdf";
   const PROJECTS_PATH = "https://petercypers.github.io/Collected-Projects/";
-  const LINKEDIN_PATH = "#"; //TODO: add real linkedin link when account is ready
+  const LINKEDIN_PATH = "https://www.linkedin.com/in/peter-cypers/";
   const PERSONALITY_TESTS_PATH = "./src/docs/PersoonlijkheidsTests_PeterCypers.pdf";
 
   cvBtn.onclick = () => { navigateTo(CV_PATH); }
