@@ -13,10 +13,7 @@
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-purple-100: oklch(94.6% 0.033 307.174);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-zinc-900: oklch(21% 0.006 285.885);
-    --color-white: #fff;
     --spacing: 0.25rem;
-    --container-2xl: 42rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-4xl: 2.25rem;
@@ -192,9 +189,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -213,14 +207,8 @@
   .max-w-\[650px\] {
     max-width: 650px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -237,21 +225,11 @@
   .self-center {
     align-self: center;
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
-  .rounded-\[15px\] {
-    border-radius: 15px;
-  }
   .rounded-\[35px\] {
     border-radius: 35px;
   }
   .rounded-\[64px\] {
     border-radius: 64px;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -269,14 +247,8 @@
   .bg-\[mediumpurple\] {
     background-color: mediumpurple;
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
   .bg-blue-100 {
     background-color: var(--color-blue-100);
-  }
-  .bg-purple-100 {
-    background-color: var(--color-purple-100);
   }
   .bg-\[url\(\.\/img\/PeterCypers_cropped\.JPG\)\] {
     background-image: url(./img/PeterCypers_cropped.JPG);
@@ -301,38 +273,20 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[darkblue\] {
-    color: darkblue;
-  }
   .text-\[gainsboro\] {
     color: gainsboro;
   }
   .text-sky-950 {
     color: var(--color-sky-950);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-2xl\/15 {
     --tw-shadow-alpha: 15%;
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.25) l a b / 15%));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-md {
-    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .text-shadow-2xs {
     text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.15));
@@ -424,11 +378,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-text-shadow-color {
   syntax: "*";
   inherits: false;
@@ -456,7 +405,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
     }
